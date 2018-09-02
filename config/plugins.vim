@@ -14,5 +14,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-"Editor config
-Plugin 'editorconfig/editorconfig-vim'
+"Indent Guides
+let g:indent_guides_enable_on_vim_startup = 1
