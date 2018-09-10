@@ -7,7 +7,6 @@ nnoremap <S-H> <C-W><C-H>
 "Handy shortcuts
 nnoremap <c-d> dd
 
-
 """""""""""""""""""""""""""""
 """""""ECHO BINDINGS"""""""""
 """""""""""""""""""""""""""""

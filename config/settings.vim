@@ -5,6 +5,7 @@ set noerrorbells visualbell t_vb=
 augroup myvimrchooks
 	au!
 	autocmd bufwritepost .vimrc runtime ../.vimrc
+	autocmd bufwritepost ./**/* runtime ../.vimrc
 augroup END
 
 "Tab Definitions
@@ -15,3 +16,9 @@ set shiftwidth=2
 "Search method
 set ignorecase
 set smartcase
+
+" Code higlight
+syntax on
+
+" Backspace
+set backspace=indent,eol,start " backspace over everything in insert mode
