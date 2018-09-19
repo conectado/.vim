@@ -12,3 +12,9 @@ nnoremap <c-d> dd
 """""""""""""""""""""""""""""
 
 let mapleader = ","
+
+" Search tags
+nnoremap <c-t> :Tags<CR>
+nnoremap <c-f> :Files<CR>
+nnoremap <c-m> :CtrlPMRUFiles<CR>
+nnoremap <c-a> :Ag<CR>
