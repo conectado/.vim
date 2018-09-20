@@ -10,8 +10,8 @@ augroup END
 
 "Tab Definitions
 set tabstop=2
-set softtabstop=0 noexpandtab
 set shiftwidth=2
+set softtabstop=0 expandtab
 
 "Search method
 set ignorecase
