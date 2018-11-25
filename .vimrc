@@ -10,11 +10,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'w0rp/ale'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'valloric/youcompleteme'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'bling/vim-airline'
 Plugin 'pangloss/vim-javascript'
@@ -24,6 +27,9 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'kien/ctrlp.vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'dracula/vim'
+Plugin 'tpope/vim-unimpaired'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,5 +57,15 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
+
+"Theme
+syntax enable
+set background=dark
+let g:dracula_termcolors=256
+let g:solarized_termcolors=16
+set t_ut=
+set t_Co=256
+colorscheme dracula
+
 "Use every config file
 runtime! ./config/*.vim
