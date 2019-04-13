@@ -22,3 +22,9 @@ syntax on
 
 " Backspace
 set backspace=indent,eol,start " backspace over everything in insert mode
+
+" Show line numbers
+set number
+
+" tpp is a cpp file
+autocmd BufEnter *.tpp :setlocal filetype=cpp

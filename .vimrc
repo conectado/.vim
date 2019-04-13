@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+set shell=/bin/bash
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -29,7 +30,9 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'dracula/vim'
+Plugin 'AlessandroYorba/Sierra'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,15 +60,6 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
-
-"Theme
-syntax enable
-set background=dark
-let g:dracula_termcolors=256
-let g:solarized_termcolors=16
-set t_ut=
-set t_Co=256
-colorscheme dracula
 
 "Use every config file
 runtime! ./config/*.vim
