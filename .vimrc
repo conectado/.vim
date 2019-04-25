@@ -33,6 +33,8 @@ Plugin 'dracula/vim'
 Plugin 'AlessandroYorba/Sierra'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-surround'
+Plugin 'tfnico/vim-gradle'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

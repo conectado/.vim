@@ -31,3 +31,4 @@ let g:ale_virtualenv_dir_names = []
 
 "YCM
 let g:ycm_echo_current_diagnostic = 0
+let g:ycm_rust_src_path = "/home/conectado/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src" 
