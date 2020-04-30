@@ -1,65 +1,49 @@
+if &term == "alacritty"        
+  let &term = "xterm-256color"
+endif
 set nocompatible              " be iMproved, required
 set shell=/bin/bash
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'w0rp/ale'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'valloric/youcompleteme'
-Plugin 'Quramy/tsuquyomi'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'bling/vim-airline'
-Plugin 'pangloss/vim-javascript'
-Plugin 'fatih/vim-go'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'Yggdroot/indentLine'
-Plugin 'kien/ctrlp.vim'
-Plugin 'rust-lang/rust.vim'
-Plugin 'dracula/vim'
-Plugin 'AlessandroYorba/Sierra'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-surround'
-Plugin 'tfnico/vim-gradle'
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
+set t_Co=256
 "
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall/VundleInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-" Specify a directory for plugins
-" - For Neovim: ~/.local/share/nvim/plugged
-" - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" Make sure you use single quotes
-
-Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'mileszs/ack.vim'
+Plug 'w0rp/ale'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'valloric/youcompleteme'
+Plug 'Quramy/tsuquyomi'
+Plug 'tpope/vim-fugitive'
+Plug 'bling/vim-airline'
+Plug 'scrooloose/nerdcommenter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'Yggdroot/indentLine'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-surround'
+
+" Languages
+Plug 'jelera/vim-javascript-syntax'
+Plug 'leafgarland/typescript-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'fatih/vim-go'
+Plug 'rust-lang/rust.vim'
+Plug 'tfnico/vim-gradle'
+Plug 'ron-rs/ron.vim'
+
+" Themes
+Plug 'dracula/vim'
+Plug 'AlessandroYorba/Sierra'
+Plug 'cocopon/iceberg.vim'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'arcticicestudio/nord-vim'
+Plug 'jdsimcoe/abstract.vim'
+Plug 'whatyouhide/vim-gotham'
+Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 

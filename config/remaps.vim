@@ -17,4 +17,5 @@ let mapleader = ","
 nnoremap <c-t> :Tags<CR>
 nnoremap <c-f> :Files<CR>
 nnoremap <c-m> :CtrlPMRUFiles<CR>
-nnoremap <c-a> :Ag<CR>
+nnoremap <C-A> :Find<CR>
+nnoremap <C-G> :GGrep<CR>
