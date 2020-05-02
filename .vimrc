@@ -13,7 +13,6 @@ Plug 'mileszs/ack.vim'
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'valloric/youcompleteme'
 Plug 'Quramy/tsuquyomi'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
@@ -22,8 +21,14 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'kien/ctrlp.vim'
+
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
+
+" Autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
+Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}
 
 " Languages
 Plug 'jelera/vim-javascript-syntax'

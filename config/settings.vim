@@ -5,6 +5,7 @@ set noerrorbells visualbell t_vb=
 augroup myvimrchooks
 	au!
 	autocmd bufwritepost .vimrc runtime ../.vimrc
+	autocmd bufwritepost ./* runtime ../.vimrc
 	autocmd bufwritepost ./**/* runtime ../.vimrc
 augroup END
 
