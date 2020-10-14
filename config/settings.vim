@@ -34,10 +34,6 @@ autocmd BufEnter *.vert :setlocal filetype=c
 " utf-8 enable
 set encoding=utf-8
 
-" Use system-clipboard(with wl-clipboard)
 xnoremap "+y y:call system("wl-copy", @")<cr>
 nnoremap "+p :let @"=substitute(system("wl-paste --no-newline"), '<C-v><C-m>', '', 'g')<cr>p
 nnoremap "*p :let @"=substitute(system("wl-paste --no-newline --primary"), '<C-v><C-m>', '', 'g')<cr>p
-
-xmap <C-c> "+y
-nmap <C-v> "+p

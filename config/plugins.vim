@@ -8,7 +8,10 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
 "Open NERD Tree on the file you're editing
-nnoremap <silent> <Leader>n :NERDTreeFind<CR>
+nnoremap <S-e> :NERDTreeFind<CR>
+
+" Airline
+let g:airline_powerline_fonts = 1
 
 " ctrlp
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
@@ -34,10 +37,6 @@ let g:fzf_tags_command = 'ctags -R'
 let g:rustfmt_autosave = 1
 let g:rustfmt_options = '--edition 2018'
 nnoremap <Leader>r :Cargo run
-
-"Ale
-let g:ale_max_signs = 10
-let g:ale_virtualenv_dir_names = []
 
 """ coc.nvim
 
@@ -113,7 +112,7 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
+nmap rn <Plug>(coc-rename)
 
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
@@ -127,6 +126,8 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
+autocmd BufWrite * :Format
+
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
@@ -135,7 +136,7 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 " Remap keys for applying codeAction to the current line.
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap qf  <Plug>(coc-fix-current)
 
 " Introduce function text object
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.

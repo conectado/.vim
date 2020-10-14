@@ -17,5 +17,10 @@ let mapleader = ","
 nnoremap <c-t> :Tags<CR>
 nnoremap <c-f> :Files<CR>
 nnoremap <c-m> :CtrlPMRUFiles<CR>
-nnoremap <C-A> :Find<CR>
+nnoremap <C-A> :Ag<CR>
 nnoremap <C-G> :GGrep<CR>
+nnoremap <C-B> :BLines<CR>
+
+
+" IDK :(
+nnoremap <C-I> <C-I>
