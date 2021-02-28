@@ -34,6 +34,13 @@ autocmd BufEnter *.vert :setlocal filetype=c
 " utf-8 enable
 set encoding=utf-8
 
-xnoremap "+y y:call system("wl-copy", @")<cr>
+"xnoremap "+y y:call system("wl-copy", @")<cr>
+vmap <silent> y y:call system("wl-copy", @@)<CR>
 nnoremap "+p :let @"=substitute(system("wl-paste --no-newline"), '<C-v><C-m>', '', 'g')<cr>p
 nnoremap "*p :let @"=substitute(system("wl-paste --no-newline --primary"), '<C-v><C-m>', '', 'g')<cr>p
+
+augroup ProjectSetup
+  au BufRead,BufEnter /home/conectado/Repos/joystream/* set tabstop=4 shiftwidth=4 softtabstop=0 expandtab colorcolumn=99
+  au BufRead,BufEnter /home/conectado/Repos/branches/**/* set tabstop=4 shiftwidth=4 softtabstop=0 expandtab colorcolumn=99
+  au BufRead,BufEnter /home/conectado/Repos/branches/**/* set tabstop=4 shiftwidth=4 softtabstop=0 expandtab colorcolumn=99
+augroup END

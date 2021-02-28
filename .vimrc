@@ -24,6 +24,7 @@ Plug 'kien/ctrlp.vim'
 
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
+Plug 'wellle/targets.vim'
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -32,6 +33,7 @@ Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
 Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}
 Plug 'fannheyward/coc-xml', {'do': 'yarn install --frozen-lockfile'}
 Plug 'voldikss/coc-cmake', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 
 " Languages
 Plug 'jelera/vim-javascript-syntax'
@@ -56,7 +58,11 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'AlessandroYorba/Alduin'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'editorconfig/editorconfig-vim'
+
 call plug#end()
 
 "Use every config file
+
+set runtimepath^=~/.vim/
 runtime! ./config/*.vim
